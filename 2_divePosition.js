@@ -44,10 +44,14 @@ async function position1(path) {
 position1(path);
 
 
-/** */
+/** Given a path to a text file with a list of directional commands in text file,
+ * determines the final horizontal position and depth of the submarine. An
+ * additional aim tracking unit is added, which represents a depth increment when
+ * other commands are used. Function returns the result of the horizontal position
+ * multiply by the depth.
+ */
 async function position2(path) {
   const data = await readData(path);
-  // const data = ['forward 5', 'down 5', 'forward 8', 'up 3', 'down 8', 'forward 2'];
   let horiz = 0;
   let depth = 0;
   let aim = 0;
