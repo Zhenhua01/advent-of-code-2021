@@ -4,7 +4,7 @@ const fsP = require("fs/promises");
 
 async function readData(path) {
   try {
-    const contents = await fsP.readFile(`./${path}`, "utf8");
+    const contents = await fsP.readFile(`./input_data/${path}`, "utf8");
     return contents.split('\n');
 
   } catch (err) {

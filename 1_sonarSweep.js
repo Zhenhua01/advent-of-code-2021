@@ -71,4 +71,4 @@ async function sonarSweep2(path, width = 3) {
 sonarSweep2(path);
 
 
-// node 1_sonarSweep.js 1_data.txt
+// node 1_sonarSweep.js 1_input.txt
